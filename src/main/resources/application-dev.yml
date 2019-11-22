@@ -1,0 +1,12 @@
+server:
+  port: 28082
+
+
+
+
+hbase:
+  offline:
+    zookeeper:
+      quorum: 10.1.0.4:2181,10.1.0.9:2181,10.1.0.2:2181
+
+

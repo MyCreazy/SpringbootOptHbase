@@ -1,0 +1,31 @@
+info:
+  name: ${spring.application.name}
+  version: @project.version@
+  
+server:
+  port: 8080
+  max-http-header-size: 10000000
+  session: 
+    timeout: 1
+  jetty: 
+    thread-pool: 
+      max: 2000
+      min: 20
+      idleTimeout: 60000
+      
+logging:
+  level:
+    ROOT: info
+  
+spring:
+  metrics:
+    servo:
+      enabled: true
+  profiles:
+    active: dev
+  application:
+    name: bigdata-api
+  aop:
+    auto: true
+  session:
+    store-type: none
